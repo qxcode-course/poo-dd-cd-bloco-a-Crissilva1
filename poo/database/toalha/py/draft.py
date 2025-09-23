@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 class Towel:    #this
     def __init__(self, color: str, size: str): # constructor
         self.color: str = color # atributos
@@ -58,5 +59,21 @@ main() #1
 
 
  
+=======
+class Towel:
+    def __init__(self):
+        self.color ="black"
+        self.size = "p"
+        self.wetness =0
+    def __str__(self):
+        return f"color:{self.color}, tam:{self.size}, hum:{self.wetness}"    
+
+towel= Towel()
+print(towel.color)
+towel.color = "yellow"
+print(towel.color)
+print(towel.size)
+print(towel.wetness)
+>>>>>>> 7a3d6ba5f6c2f28cabc5701885473ffbc3b0afcf
 
 

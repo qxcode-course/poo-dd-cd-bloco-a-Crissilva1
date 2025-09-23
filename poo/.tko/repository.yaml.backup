@@ -9,6 +9,10 @@ expanded:
 - configuracao-e-aquecimento
 - campanha-principal
 - bloco_b-primeiras-classes
+<<<<<<< HEAD
+=======
+- bloco_a-práticas-com-o-git
+>>>>>>> 7a3d6ba5f6c2f28cabc5701885473ffbc3b0afcf
 tasks: {}
 flags:
   quests: 0
@@ -16,4 +20,8 @@ flags:
   tasks: 0
   graph: 0
   xray: 0
+<<<<<<< HEAD
 index: animal
+=======
+index: git_pratica
+>>>>>>> 7a3d6ba5f6c2f28cabc5701885473ffbc3b0afcf
