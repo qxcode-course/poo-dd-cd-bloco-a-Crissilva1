@@ -1,35 +1,57 @@
-class Animal:
-    def __init__(self, species:str, age: int, sound: str ): 
+class Animal: #construtor, é direcionado na criação de um objeto, no exemplo
+#o animal, que vai ser atribuido as suas caracteristicas
+    def __init__(self, species:str, sound: str ): 
         self.species =str=species
-        self.age : int = 0
         self.sound = str= sound
+        self.age: int=0
 
-    def __str__(self) -> str:
-        return f"{sel.species}:{self.age}:{self.sound}"
+    def __str__(self) -> str: # o toString é para transformar a classe/objeto
+        #em texto, realizando toda a conversão
+        return f"{self.species}:{self.age}:{self.sound}"
+
+    def ageBy(self, increment:int): # o def sempre inicializa uma variavel
+        ja_morto= self.age >=4
+        if (self.age +increment >=4):
+            print("warning: {species} morreu")
+        else:
+            self.age +=increment 
+
+    def makeSound(self)->str:
+        if self.age ==0:
+            return  "---"
+        elif self.age==4:
+            return "RIP"
+        else:
+            return self.sound
     
+    
+        
+        
+       
 
 
 
 
 
 def main():
-    animal= Animal("", "")
-    while True:
+    animal= Animal("", "") # crio o objeto vazio para manipular com as entradas
+    while True:#manter o usuario no loop para interagir com o animal
         line: str = input() #5 entrada de linha
-        args: list[str]= line.split (" ")
-        if args [0]=="end":
+        args: list[str]= line.split (" ") # pergunta ao usuario oq fazer e quebra dá espaço as respostas
+        if args [0]=="end": # aqui é necessario para saber se o usuario nâo quer mais interagir
             break
-        elif args [0] =="new": # color size
-            color = args[1]
-            size = args[2]
-            toalha = Towel (color,size)
+        if args [0]=="init":
+            species= args[1]
+            sound= args[2]
+            animal=Animal(species,sound)
         elif args[0]=="show":
-            print(toalha)
-        elif args [0]== "dry":# amount
-            amount: int = int (args[1])
-            toalha.dry (amount)
-        else:
-            print("fail:comando invalido")
+            print(animal)
+        elif args [0]== "grow":
+            increment: int = int (args[1])
+            animal.ageBy (increment)
+        elif args[0] == "noise":
+            print(animal.makeSound())
+    
 
 
 main() #1           

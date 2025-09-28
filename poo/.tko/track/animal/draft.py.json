@@ -2,8 +2,28 @@
     "patches": [
         {
             "label": "2025-09-23_19-12-50",
-            "content": "",
+            "content": "@@ -1,850 +0,0 @@\n-class Animal:%0A    def __init__(self, species:str, age: int, sound: str ): %0A        self.species =str=species%0A        self.sound = str= sound%0A        self.age = int=0%0A%0A    def __str__(self) -%3E str:%0A        return f%22%7Bself.species%7D:%7Bself.age%7D:%7Bself.sound%7D%22%0A    %0A%0A%0A%0A%0A%0Adef main():%0A    animal= Animal(%22%22, %22%22)%0A    while True:%0A        line: str = input() #5 entrada de linha%0A        args: list%5Bstr%5D= line.split (%22 %22)%0A        if args %5B0%5D==%22end%22:%0A            break%0A        elif args %5B0%5D ==%22init%22: %0A            species= args%5B1%5D%0A            age = args%5B2%5D%0A            sound=args%5B3%5D%0A            animal=Animal(species,age,sound)%0A        elif args%5B0%5D==%22show%22:%0A            print(animal)%0A        elif args %5B0%5D== %22age%22:# amount%0A            amount: int = int (args%5B1%5D)%0A            animal.age (amount)%0A        else:%0A            print(%22morreu%22)%0A%0A%0Amain() #1           %0A%0A%0A%0A%0A\n",
             "lines": "0"
+        },
+        {
+            "label": "2025-09-27_18-55-20",
+            "content": "@@ -251,417 +251,8 @@\n d%7D%22%0A\n-%0A    def ageBy(self, increment:int):%0A        ja_morto= self.age %3E=4%0A        if (self.age +increment %3E=4):%0A            print(%22warning: %7Bspecies%7D morreu%22)%0A        else:%0A            self.age +=increment %0A%0A    def makeSound(self)-%3Estr:%0A        if self.age ==0:%0A            return  %22---%22%0A        elif self.age==4:%0A            return %22RIP%22%0A        else:%0A            return self.sound%0A    %0A    %0A        %0A        %0A   \n     \n@@ -510,16 +510,42 @@\n args%5B1%5D%0A\n+            age = args%5B2%5D%0A\n         \n@@ -554,23 +554,22 @@\n   sound=\n- \n args%5B\n-2\n+3\n %5D%0A      \n@@ -596,16 +596,20 @@\n species,\n+age,\n sound)%0A \n@@ -693,16 +693,24 @@\n = %22age%22:\n+# amount\n %0A       \n@@ -714,23 +714,20 @@\n         \n-increme\n+amou\n nt: int \n@@ -768,19 +768,14 @@\n .age\n-By (increme\n+ (amou\n nt)%0A\n@@ -810,24 +810,16 @@\n int(\n-animal.makeSound\n+%22morreu%22\n )%0A%0A%0A\n",
+            "lines": "40"
+        },
+        {
+            "label": "2025-09-27_20-12-08",
+            "content": "@@ -42,16 +42,26 @@\n ies:str,\n+ age: int,\n  sound: \n",
+            "lines": "58"
+        },
+        {
+            "label": "2025-09-27_20-15-35",
+            "content": "@@ -10,128 +10,8 @@\n mal:\n- #construtor, %C3%A9 direcionado na cria%C3%A7%C3%A3o de um objeto, no exemplo%0A#o animal, que vai ser atribuido as suas caracteristicas\n %0A   \n@@ -183,103 +183,8 @@\n str:\n- # o toString %C3%A9 para transformar a classe/objeto%0A        #em texto, realizando toda a convers%C3%A3o\n %0A   \n@@ -277,47 +277,8 @@\n nt):\n- # o def sempre inicializa uma variavel\n %0A   \n@@ -698,130 +698,24 @@\n  %22%22)\n- # crio o objeto vazio para manipular com as entradas%0A    while True:#manter o usuario no loop para interagir com o animal\n+%0A    while True:\n %0A   \n@@ -804,39 +804,8 @@\n %22 %22)\n- # pergunta ao usuario oq fazer\n %0A   \n@@ -847,32 +847,34 @@\n   break%0A        \n+el\n if args %5B0%5D==%22in\n@@ -868,16 +868,17 @@\n args %5B0%5D\n+ \n ==%22init%22\n@@ -878,16 +878,17 @@\n =%22init%22:\n+ \n %0A       \n@@ -1192,18 +1192,16 @@\n akeSound\n-()\n )%0A%0A%0Amain\n",
+            "lines": "58"
+        },
+        {
+            "label": "2025-09-28_01-00-40",
+            "content": "class Animal: #construtor, \u00e9 direcionado na cria\u00e7\u00e3o de um objeto, no exemplo\n#o animal, que vai ser atribuido as suas caracteristicas\n    def __init__(self, species:str, sound: str ): \n        self.species =str=species\n        self.sound = str= sound\n        self.age = int=0\n\n    def __str__(self) -> str: # o toString \u00e9 para transformar a classe/objeto\n        #em texto, realizando toda a convers\u00e3o\n        return f\"{self.species}:{self.age}:{self.sound}\"\n\n    def ageBy(self, increment:int): # o def sempre inicializa uma variavel\n        ja_morto= self.age >=4\n        if (self.age +increment >=4):\n            print(\"warning: {species} morreu\")\n        else:\n            self.age +=increment \n\n    def makeSound(self)->str:\n        if self.age ==0:\n            return  \"---\"\n        elif self.age==4:\n            return \"RIP\"\n        else:\n            return self.sound\n    \n    \n        \n        \n       \n\n\n\n\n\ndef main():\n    animal= Animal(\"\", \"\") # crio o objeto vazio para manipular com as entradas\n    while True:#manter o usuario no loop para interagir com o animal\n        line: str = input() #5 entrada de linha\n        args: list[str]= line.split (\" \") # pergunta ao usuario oq fazer\n        if args [0]==\"end\":\n            break\n        if args [0]==\"init\":\n            species= args[1]\n            sound= args[2]\n            animal=Animal(species,sound)\n        elif args[0]==\"show\":\n            print(animal)\n        elif args [0]== \"age\":\n            increment: int = int (args[1])\n            animal.ageBy (increment)\n        else:\n            print(animal.makeSound())\n\n\nmain() #1           \n\n\n\n\n",
+            "lines": "60"
         }
     ]
 }

@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2025-09-28_14-59-36",
+            "content": "class Toalha:\n    def __init__ (self, color:str, size:str):\n        self.color= str = color\n        self.size = str = size\n        self.wetness: int =0\n\n    def dry(self, amount:int) : # n\u00e3o pode fazer opera\u00e7\u00e3o dentro do parametro\n        self.wetness +=amount  \n\n    def  wringOut (self)-> None: \n        self.wetness =0   \n\n    def  getMaxWetness(self)->int:\n        if self.size == \"P\":\n            return 10\n        if self.size == \"M\" :\n            return 20\n        if self.size == \"G\" :\n            return 30\n\n    def isDry (self)-> bool:\n            return self.wetness==0         \n    \n    def __str__(self) -> str: # toString\n        return f\"Cor:{self.color}, Tamanho:{self.size}, Umidade:{self.wetness}\"\n    \n\n\ndef main ():\n    toalha=Towel (\"\", \"\")\n    while True:\n        line:str=input()\n        args: list[str]=line.split(\" \")\n        if args[0]==\"end\":\n            break\n        elif args [0]==\"criar\":  \n            color=args[1]\n            size=args[2]\n            toalha= Towel(color,size)\n        elif args [0]==\"mostrar\":\n            print(toalha)\n        elif args [0]== \"dry\":# amount\n            amount: int = int (args[1])\n            toalha.dry (amount)\n        else:\n            print(\"fail:comando invalido\")\n\nmain()            \n",
+            "lines": "48"
+        }
+    ]
+}
