@@ -9,12 +9,10 @@ class Animal: #construtor, é direcionado na criação de um objeto, no exemplo
         #em texto, realizando toda a conversão
         return f"{self.species}:{self.age}:{self.sound}"
 
-    def ageBy(self, increment:int): # o def sempre inicializa uma variavel
-        ja_morto= self.age >=4
-        if (self.age +increment >=4):
-            print("warning: {species} morreu")
-        else:
-            self.age +=increment 
+    def ageBy(self, increment:int)->None: # o def sempre inicializa uma variavel
+       self.age += increment
+       if self.age >=4:
+           print (f"warning: {self.species} morreu")
 
     def makeSound(self)->str:
         if self.age ==0:
@@ -23,10 +21,6 @@ class Animal: #construtor, é direcionado na criação de um objeto, no exemplo
             return "RIP"
         else:
             return self.sound
-    
-    
-        
-        
        
 
 
