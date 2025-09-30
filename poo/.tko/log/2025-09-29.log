@@ -1,0 +1,9 @@
+2025-09-29 20:17:52, MOVE, v:1, k:animal, mode:PICK
+2025-09-29 20:17:54, EXEC, v:1, k:animal, mode:FULL, rate:25
+2025-09-29 20:22:37, EXEC, v:1, k:animal, mode:FULL, rate:25, size:73
+2025-09-29 20:27:25, EXEC, v:1, k:animal, mode:FULL, rate:25, size:78
+2025-09-29 23:42:30, MOVE, v:1, k:animal, mode:PICK
+2025-09-29 23:42:32, EXEC, v:1, k:animal, mode:FULL, rate:100, size:61
+2025-09-29 23:47:34, EXEC, v:1, k:animal, mode:FULL, rate:100
+2025-09-29 23:47:42, MOVE, v:1, k:animal, mode:BACK
+2025-09-29 23:50:58, SELF, v:1, k:animal, rate:100, human:sim_de_amigas, iagen:sim, guide:sim_aula_gravada, other:nao, alone:4, study:360

@@ -10,9 +10,11 @@ class Animal: #construtor, é direcionado na criação de um objeto, no exemplo
         return f"{self.species}:{self.age}:{self.sound}"
 
     def ageBy(self, increment:int)->None: # o def sempre inicializa uma variavel
-       self.age += increment
-       if self.age >=4:
-           print (f"warning: {self.species} morreu")
+       # se for maior que 4, ela não aumentara na linha abaixo, ela cogela
+        self.age += increment
+        if self.age > 4:
+            self.age = 4
+
 
     def makeSound(self)->str:
         if self.age ==0:
@@ -28,9 +30,10 @@ class Animal: #construtor, é direcionado na criação de um objeto, no exemplo
 
 
 def main():
-    animal= Animal("", "") # crio o objeto vazio para manipular com as entradas
+    animal= Animal(" ", " ") # crio o objeto vazio para manipular com as entradas
     while True:#manter o usuario no loop para interagir com o animal
         line: str = input() #5 entrada de linha
+        print ("$" + line) #eco
         args: list[str]= line.split (" ") # pergunta ao usuario oq fazer e quebra dá espaço as respostas
         if args [0]=="end": # aqui é necessario para saber se o usuario nâo quer mais interagir
             break
@@ -41,8 +44,11 @@ def main():
         elif args[0]=="show":
             print(animal)
         elif args [0]== "grow":
+
             increment: int = int (args[1])
             animal.ageBy (increment)
+            if  animal.age == 4:
+                 print (f"warning: {animal.species} morreu") 
         elif args[0] == "noise":
             print(animal.makeSound())
     

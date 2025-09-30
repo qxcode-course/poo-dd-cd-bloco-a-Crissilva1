@@ -10,6 +10,8 @@ expanded:
 - campanha-principal
 - bloco_b-primeiras-classes
 tasks:
+  animal: '{rate:100, human:sim_de_amigas, iagen:sim, guide:sim_aula_gravada, other:nao,
+    alone:4, study:360}'
   enxugar: '{human:sim_amiga, iagen:sim_corrigir_erro_de_sintaxe, guide:sim_para_entender_a_estrutura,
     other:nao, alone:3, study:108}'
 flags:

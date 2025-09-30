@@ -5,3 +5,22 @@
 2025-09-28 15:09:44, MOVE, v:1, k:enxugar, mode:PICK
 2025-09-28 15:18:01, SELF, v:1, k:enxugar, human:sim_amiga, iagen:sim_corrigir_erro_de_sintaxe, guide:sim_para_entender_a_estrutura, other:nao, alone:3, study:108
 2025-09-28 15:19:05, MOVE, v:1, k:enxugar, mode:PICK
+2025-09-28 17:10:15, MOVE, v:1, k:animal, mode:PICK
+2025-09-28 17:10:17, EXEC, v:1, k:animal, mode:FREE, size:71
+2025-09-28 17:15:01, MOVE, v:1, k:animal, mode:PICK
+2025-09-28 17:15:02, EXEC, v:1, k:animal, mode:FULL, rate:0
+2025-09-28 17:15:04, EXEC, v:1, k:animal, mode:FULL, rate:0
+2025-09-28 17:18:46, EXEC, v:1, k:animal, mode:FULL, rate:0, size:71
+2025-09-28 17:18:48, EXEC, v:1, k:animal, mode:FULL, rate:0
+2025-09-28 17:19:25, EXEC, v:1, k:animal, mode:FULL, rate:0, size:71
+2025-09-28 17:27:57, MOVE, v:1, k:enxugar, mode:PICK
+2025-09-28 17:28:00, EXEC, v:1, k:enxugar, mode:FULL, rate:0, size:48
+2025-09-28 17:30:41, EXEC, v:1, k:enxugar, mode:FULL, rate:0, size:49
+2025-09-28 17:32:16, EXEC, v:1, k:enxugar, mode:FULL, rate:20, size:49
+2025-09-28 17:32:39, EXEC, v:1, k:enxugar, mode:FULL, rate:30, size:49
+2025-09-28 17:35:21, MOVE, v:1, k:animal, mode:PICK
+2025-09-28 17:35:23, EXEC, v:1, k:animal, mode:FULL, rate:25, size:72
+2025-09-28 17:35:26, EXEC, v:1, k:animal, mode:FULL, rate:25
+2025-09-28 17:36:41, EXEC, v:1, k:animal, mode:FULL, rate:0, size:72
+2025-09-28 17:37:40, EXEC, v:1, k:animal, mode:FULL, rate:0, size:72
+2025-09-28 17:38:00, EXEC, v:1, k:animal, mode:FULL, rate:25, size:72
