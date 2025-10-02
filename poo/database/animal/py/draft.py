@@ -44,7 +44,6 @@ def main():
         elif args[0]=="show":
             print(animal)
         elif args [0]== "grow":
-
             increment: int = int (args[1])
             animal.ageBy (increment)
             if  animal.age == 4:
