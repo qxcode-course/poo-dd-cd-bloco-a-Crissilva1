@@ -10,10 +10,14 @@ expanded:
 - campanha-principal
 - bloco_b-primeiras-classes
 tasks:
+  toalha: '{human:nao_refiz_sozinha, iagen:nao, guide:sim_video_aula, other:sim_anotacoes,
+    alone:9, study:120}'
   animal: '{rate:100, human:nao_refiz_sozinha_de_outra_forma, iagen:sim_para_tirar_duvidas,
     guide:nao, other:sim_anotacoes_de_estrtura_de_outras_atividades, alone:9, study:42}'
-  carro: '{human:sim_amigas, iagen:sim_duvidas_e_incertezas_se_funcionaria, guide:nao,
-    other:nao, alone:4, study:250}'
+  carro: '{human:nao_refiz_sozinha_aplicando_logica_diferente, iagen:sim_duvidas_em_relacao_a_logica,
+    guide:nao, other:sim_anotacoes, alone:7, study:55}'
+  calculadora: '{human:nao_refiz_boa_parte_sozinha, iagen:sim_duvidas_na_logica, guide:nao,
+    other:sim_anotacoes, alone:6, study:40}'
   enxugar: '{human:nao_refiz_novamente_sozinha, iagen:sim_tirar_duvidas_de_logica,
     guide:sim_para_entender_a_estrutura, other:nao, alone:8, study:88}'
 flags:
@@ -22,4 +26,4 @@ flags:
   tasks: 0
   graph: 0
   xray: 0
-index: carro
+index: bloco_b-primeiras-classes

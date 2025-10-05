@@ -36,3 +36,25 @@
 2025-10-05 19:31:00, EXEC, v:1, k:animal, mode:FULL, rate:50, size:54
 2025-10-05 19:32:21, EXEC, v:1, k:animal, mode:FULL, rate:100, size:54
 2025-10-05 19:36:35, SELF, v:1, k:animal, rate:100, human:nao_refiz_sozinha_de_outra_forma, iagen:sim_para_tirar_duvidas, guide:nao, other:sim_anotacoes_de_estrtura_de_outras_atividades, alone:9, study:42
+2025-10-05 20:26:05, MOVE, v:1, k:carro, mode:PICK
+2025-10-05 20:26:07, EXEC, v:1, k:carro, mode:FULL, rate:0, size:71
+2025-10-05 20:26:08, EXEC, v:1, k:carro, mode:FULL, rate:0
+2025-10-05 20:28:10, EXEC, v:1, k:carro, mode:FULL, rate:0, size:71
+2025-10-05 20:28:11, EXEC, v:1, k:carro, mode:FULL, rate:0
+2025-10-05 20:31:38, EXEC, v:1, k:carro, mode:FULL, rate:0, size:71
+2025-10-05 20:31:41, EXEC, v:1, k:carro, mode:FULL, rate:0
+2025-10-05 20:32:53, EXEC, v:1, k:carro, mode:FULL, rate:20, size:71
+2025-10-05 20:34:04, EXEC, v:1, k:carro, mode:FULL, rate:50, size:71
+2025-10-05 20:36:18, EXEC, v:1, k:carro, mode:FULL, rate:60, size:73
+2025-10-05 20:36:53, EXEC, v:1, k:carro, mode:FULL, rate:100, size:73
+2025-10-05 20:39:54, SELF, v:1, k:carro, human:nao_refiz_sozinha_aplicando_logica_diferente, iagen:sim_duvidas_em_relacao_a_logica, guide:nao, other:sim_anotacoes, alone:7, study:55
+2025-10-05 21:00:37, MOVE, v:1, k:calculadora, mode:PICK
+2025-10-05 21:00:38, EXEC, v:1, k:calculadora, mode:FULL, rate:0, size:75
+2025-10-05 21:00:39, EXEC, v:1, k:calculadora, mode:FULL, rate:0
+2025-10-05 21:01:20, EXEC, v:1, k:calculadora, mode:FULL, rate:0, size:75
+2025-10-05 21:02:53, EXEC, v:1, k:calculadora, mode:FULL, rate:9, size:75
+2025-10-05 21:03:56, EXEC, v:1, k:calculadora, mode:FULL, rate:9, size:75
+2025-10-05 21:05:03, EXEC, v:1, k:calculadora, mode:FULL, rate:9, size:74
+2025-10-05 21:08:58, EXEC, v:1, k:calculadora, mode:FULL, rate:100, size:74
+2025-10-05 21:12:53, SELF, v:1, k:calculadora, human:nao_refiz_boa_parte_sozinha, iagen:sim_duvidas_na_logica, guide:nao, other:sim_anotacoes, alone:6, study:40
+2025-10-05 21:14:12, SELF, v:1, k:toalha, human:nao_refiz_sozinha, iagen:nao, guide:sim_video_aula, other:sim_anotacoes, alone:9, study:120
