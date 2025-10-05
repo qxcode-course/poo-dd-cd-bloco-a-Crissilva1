@@ -22,8 +22,23 @@
         },
         {
             "label": "2025-09-28_17-32-39",
-            "content": "class Towel:\n    def __init__ (self, color:str, size:str):\n        self.color= str = color\n        self.size = str = size\n        self.wetness: int =0\n\n    def dry(self, amount:int) : # n\u00e3o pode fazer opera\u00e7\u00e3o dentro do parametro\n        self.wetness +=amount  \n\n    def  wringOut (self)-> None: \n        self.wetness =0   \n\n    def  getMaxWetness(self)->int:\n        if self.size == \"P\":\n            return 10\n        if self.size == \"M\" :\n            return 20\n        if self.size == \"G\" :\n            return 30\n        return 0\n    def isDry (self)-> bool:\n            return self.wetness==0         \n    \n    def __str__(self) -> str: # toString\n        return f\"Cor: {self.color}, Tamanho: {self.size}, Umidade: {self.wetness}\"\n    \n\n\ndef main ():\n    toalha =Towel (\"\", \"\")\n    while True:\n        line:str=input()\n        print (\"$\" + line) #eco\n        args: list[str]=line.split(\" \")\n        if args[0]==\"end\":\n            break\n        elif args [0]== \"criar\": #color,size \n            color = args[1]\n            size = args[2]\n            toalha = Towel(color , size)\n        elif args [0]== \"mostrar\":\n            print(toalha)\n        elif args [0]== \"dry\":# amount\n            amount: int = int (args[1])\n            toalha.dry (amount)\n        else:\n            print(\"sim\")\n\nmain()            \n",
+            "content": "@@ -1164,169 +1164,11 @@\n == %22\n-torcer%22:%0A             toalha.wringOut()%0A        elif  args%5B0%5D == %22seca%22:%0A            print (%22sim%22 if toalha.isDry()else %22n%C3%A3o%22 ) %0A        elif args %5B0%5D== %22enxugar\n+dry\n %22:# \n@@ -1281,33 +1281,13 @@\n rint\n- \n (%22\n-fail: comando invalido\n+sim\n %22)%0A%0A\n",
             "lines": "49"
+        },
+        {
+            "label": "2025-10-04_22-02-26",
+            "content": "@@ -1282,17 +1282,17 @@\n )else %22n\n-a\n+%C3%A3\n o%22 ) %0A  \n",
+            "lines": "53"
+        },
+        {
+            "label": "2025-10-04_22-02-57",
+            "content": "@@ -258,145 +258,8 @@\n nt  \n-%0A        if self.wetness %3E= self.getMaxWetness():%0A            print (%22toalha encharcada%22)%0A            self.wetness = self.getMaxWetness()\n %0A%0A  \n",
+            "lines": "53"
+        },
+        {
+            "label": "2025-10-04_22-08-27",
+            "content": "class Towel:\n    def __init__ (self, color:str, size:str):\n        self.color= str = color\n        self.size = str = size\n        self.wetness: int =0\n\n    def dry(self, amount:int) : # n\u00e3o pode fazer opera\u00e7\u00e3o dentro do parametro\n        self.wetness +=amount  \n        if self.wetness >= self.getMaxWetness():\n            print (\"toalha encharcada\")\n            self.wetness = self.getMaxWetness()\n\n    def  wringOut (self)-> None: \n        self.wetness =0   \n\n    def  getMaxWetness(self)->int:\n        if self.size == \"P\":\n            return 10\n        if self.size == \"M\" :\n            return 20\n        if self.size == \"G\" :\n            return 30\n        return 0\n    def isDry (self)-> bool:\n            return self.wetness==0         \n    \n    def __str__(self) -> str: # toString\n        return f\"Cor: {self.color}, Tamanho: {self.size}, Umidade: {self.wetness}\"\n    \n\n\ndef main ():\n    toalha =Towel (\"\", \"\")\n    while True:\n        line:str=input()\n        print (\"$\" + line) #eco\n        args: list[str]=line.split(\" \")\n        if args[0]==\"end\":\n            break\n        elif args [0]== \"criar\": #color,size \n            color = args[1]\n            size = args[2]\n            toalha = Towel(color , size)\n        elif args [0]== \"mostrar\":\n            print(toalha)\n        elif args [0]== \"torcer\":\n             toalha.wringOut()\n        elif  args[0] == \"seca\":\n            print (\"sim\" if toalha.isDry()else \"nao\" ) \n        elif args [0]== \"enxugar\":# amount\n            amount: int = int (args[1])\n            toalha.dry (amount)\n        else:\n            print (\"fail: comando invalido\")\n\nmain()            \n",
+            "lines": "56"
         }
     ]
 }

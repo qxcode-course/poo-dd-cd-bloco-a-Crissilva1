@@ -48,7 +48,11 @@ def main():#2
             size = args[2]
             toalha = Towel (color,size)
         elif args[0]=="show":
-            print(toalha)
+            print(toalha) 
+        elif args [0]== "torcer":
+             toalha.wringOut()
+        elif  args[0] == "seca":
+            print ("sim" if toalha.isDry()else "nao" ) 
         elif args [0]== "dry":# amount
             amount: int = int (args[1])
             toalha.dry (amount)

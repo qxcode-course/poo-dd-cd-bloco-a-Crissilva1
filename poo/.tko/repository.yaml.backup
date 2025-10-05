@@ -12,6 +12,8 @@ expanded:
 tasks:
   animal: '{rate:100, human:sim_de_amigas, iagen:sim, guide:sim_aula_gravada, other:nao,
     alone:4, study:360}'
+  carro: '{human:sim_amigas, iagen:sim_duvidas_e_incertezas_se_funcionaria, guide:nao,
+    other:nao, alone:4, study:250}'
   enxugar: '{human:sim_amiga, iagen:sim_corrigir_erro_de_sintaxe, guide:sim_para_entender_a_estrutura,
     other:nao, alone:3, study:108}'
 flags:
@@ -20,4 +22,4 @@ flags:
   tasks: 0
   graph: 0
   xray: 0
-index: carro
+index: calculadora
