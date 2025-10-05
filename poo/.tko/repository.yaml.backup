@@ -14,12 +14,12 @@ tasks:
     alone:4, study:360}'
   carro: '{human:sim_amigas, iagen:sim_duvidas_e_incertezas_se_funcionaria, guide:nao,
     other:nao, alone:4, study:250}'
-  enxugar: '{human:sim_amiga, iagen:sim_corrigir_erro_de_sintaxe, guide:sim_para_entender_a_estrutura,
-    other:nao, alone:3, study:108}'
+  enxugar: '{human:nao_refiz_novamente_sozinha, iagen:sim_tirar_duvidas_de_logica,
+    guide:sim_para_entender_a_estrutura, other:nao, alone:8, study:88}'
 flags:
   quests: 0
   tracks: 0
   tasks: 0
   graph: 0
   xray: 0
-index: calculadora
+index: animal

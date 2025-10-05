@@ -37,8 +37,33 @@
         },
         {
             "label": "2025-10-04_22-08-27",
-            "content": "class Towel:\n    def __init__ (self, color:str, size:str):\n        self.color= str = color\n        self.size = str = size\n        self.wetness: int =0\n\n    def dry(self, amount:int) : # n\u00e3o pode fazer opera\u00e7\u00e3o dentro do parametro\n        self.wetness +=amount  \n        if self.wetness >= self.getMaxWetness():\n            print (\"toalha encharcada\")\n            self.wetness = self.getMaxWetness()\n\n    def  wringOut (self)-> None: \n        self.wetness =0   \n\n    def  getMaxWetness(self)->int:\n        if self.size == \"P\":\n            return 10\n        if self.size == \"M\" :\n            return 20\n        if self.size == \"G\" :\n            return 30\n        return 0\n    def isDry (self)-> bool:\n            return self.wetness==0         \n    \n    def __str__(self) -> str: # toString\n        return f\"Cor: {self.color}, Tamanho: {self.size}, Umidade: {self.wetness}\"\n    \n\n\ndef main ():\n    toalha =Towel (\"\", \"\")\n    while True:\n        line:str=input()\n        print (\"$\" + line) #eco\n        args: list[str]=line.split(\" \")\n        if args[0]==\"end\":\n            break\n        elif args [0]== \"criar\": #color,size \n            color = args[1]\n            size = args[2]\n            toalha = Towel(color , size)\n        elif args [0]== \"mostrar\":\n            print(toalha)\n        elif args [0]== \"torcer\":\n             toalha.wringOut()\n        elif  args[0] == \"seca\":\n            print (\"sim\" if toalha.isDry()else \"nao\" ) \n        elif args [0]== \"enxugar\":# amount\n            amount: int = int (args[1])\n            toalha.dry (amount)\n        else:\n            print (\"fail: comando invalido\")\n\nmain()            \n",
+            "content": "@@ -22,16 +22,17 @@\n __init__\n+ \n (self, c\n@@ -36,21 +36,19 @@\n , color:\n- \n str\n- \n , size:s\n@@ -70,18 +70,17 @@\n lf.color\n- :\n+=\n  str = c\n@@ -83,17 +83,16 @@\n  = color\n- \n %0A       \n@@ -102,17 +102,17 @@\n lf.size \n-:\n+=\n  str = s\n@@ -139,17 +139,15 @@\n ness\n- \n : int =\n- \n 0%0A%0A \n@@ -156,17 +156,16 @@\n  def dry\n- \n (self, a\n@@ -173,16 +173,61 @@\n ount\n- : \n+:\n int)\n-:\n+ : # n%C3%A3o pode fazer opera%C3%A7%C3%A3o dentro do parametro\n %0A   \n@@ -246,23 +246,24 @@\n tness +=\n- \n amount\n+  \n %0A       \n@@ -280,16 +280,17 @@\n etness %3E\n+=\n  self.ge\n@@ -393,25 +393,24 @@\n ness()%0A%0A\n-%0A\n     def \n wringOut\n@@ -401,16 +401,17 @@\n     def \n+ \n wringOut\n@@ -424,18 +424,18 @@\n )-%3E None\n- \n :\n+ \n %0A       \n@@ -449,18 +449,20 @@\n etness =\n- \n 0\n+   \n %0A%0A    de\n@@ -463,16 +463,17 @@\n     def \n+ \n getMaxWe\n@@ -481,34 +481,19 @@\n ness\n- \n (self\n-, getMaxWetness:\n+)-%3E\n int\n-)\n :%0A  \n@@ -568,16 +568,17 @@\n e == %22M%22\n+ \n :%0A      \n@@ -604,17 +604,16 @@\n      if \n- \n self.siz\n@@ -620,16 +620,17 @@\n e == %22G%22\n+ \n :%0A      \n@@ -644,18 +644,16 @@\n eturn 30\n-  \n %0A       \n@@ -661,22 +661,16 @@\n return 0\n-     %0A\n %0A    def\n@@ -684,16 +684,17 @@\n (self)-%3E\n+ \n bool:%0A  \n@@ -695,24 +695,28 @@\n ol:%0A        \n+   \n+ \n return self.\n@@ -726,18 +726,25 @@\n ness\n- \n ==0\n-%0A\n+  \n     \n-%0A\n+   %0A    \n %0A   \n@@ -761,18 +761,20 @@\n __(self)\n+ \n -%3E\n+ \n str: # t\n@@ -908,70 +908,30 @@\n l (%22\n- \n %22, %22\n- \n %22)\n-#3 objeto manipulado%0A    while True:# 4 loop infinito \n+%0A    while True:\n %0A   \n@@ -955,27 +955,8 @@\n ut()\n-#5 entrada de linha\n %0A   \n",
             "lines": "56"
+        },
+        {
+            "label": "2025-10-05_18-13-45",
+            "content": "@@ -872,11 +872,12 @@\n l (%22\n-%22 ,\n+ %22, \n %22 %22)\n",
+            "lines": "59"
+        },
+        {
+            "label": "2025-10-05_18-14-21",
+            "content": "@@ -872,14 +872,12 @@\n l (%22\n- \n %22 ,%22\n- \n  %22)#\n",
+            "lines": "59"
+        },
+        {
+            "label": "2025-10-05_18-17-40",
+            "content": "@@ -439,16 +439,35 @@\n ss (self\n+, getMaxWetness:int\n ):%0A     \n",
+            "lines": "59"
+        },
+        {
+            "label": "2025-10-05_18-17-44",
+            "content": "@@ -240,17 +240,16 @@\n etness %3E\n-=\n  self.ge\n",
+            "lines": "59"
+        },
+        {
+            "label": "2025-10-05_18-20-38",
+            "content": "class Towel:\n    def __init__(self, color: str , size:str):\n        self.color : str = color \n        self.size : str = size\n        self.wetness : int = 0\n\n    def dry (self, amount : int):\n        self.wetness += amount\n        if self.wetness >= self.getMaxWetness():\n            print (\"toalha encharcada\")\n            self.wetness = self.getMaxWetness()\n\n\n    def wringOut (self)-> None :\n        self.wetness = 0\n\n    def getMaxWetness (self):\n        if self.size == \"P\":\n            return 10\n        if self.size == \"M\":\n            return 20\n        if  self.size == \"G\":\n            return 30  \n        return 0     \n\n    def isDry (self)->bool:\n        return self.wetness ==0\n    \n\n    def __str__(self)->str: # toString\n        return f\"Cor: {self.color}, Tamanho: {self.size}, Umidade: {self.wetness}\"\n    \n\n\ndef main ():\n    toalha =Towel (\" \" ,\"  \")#3 objeto manipulado\n    while True:# 4 loop infinito \n        line:str=input()#5 entrada de linha\n        print (\"$\" + line) #eco\n        args: list[str]=line.split(\" \")\n        if args[0]==\"end\":\n            break\n        elif args [0]== \"criar\": #color,size \n            color = args[1]\n            size = args[2]\n            toalha = Towel(color , size)\n        elif args [0]== \"mostrar\":\n            print(toalha)\n        elif args [0]== \"torcer\":\n             toalha.wringOut()\n        elif  args[0] == \"seca\":\n            print (\"sim\" if toalha.isDry()else \"nao\" ) \n        elif args [0]== \"enxugar\":# amount\n            amount: int = int (args[1])\n            toalha.dry (amount)\n        else:\n            print (\"fail: comando invalido\")\n\nmain()            \n",
+            "lines": "59"
         }
     ]
 }
