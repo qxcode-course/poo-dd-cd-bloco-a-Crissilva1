@@ -10,8 +10,8 @@ expanded:
 - campanha-principal
 - bloco_b-primeiras-classes
 tasks:
-  animal: '{rate:100, human:sim_de_amigas, iagen:sim, guide:sim_aula_gravada, other:nao,
-    alone:4, study:360}'
+  animal: '{rate:100, human:nao_refiz_sozinha_de_outra_forma, iagen:sim_para_tirar_duvidas,
+    guide:nao, other:sim_anotacoes_de_estrtura_de_outras_atividades, alone:9, study:42}'
   carro: '{human:sim_amigas, iagen:sim_duvidas_e_incertezas_se_funcionaria, guide:nao,
     other:nao, alone:4, study:250}'
   enxugar: '{human:nao_refiz_novamente_sozinha, iagen:sim_tirar_duvidas_de_logica,
@@ -22,4 +22,4 @@ flags:
   tasks: 0
   graph: 0
   xray: 0
-index: animal
+index: carro

@@ -1,32 +1,28 @@
-class Animal: #construtor, é direcionado na criação de um objeto, no exemplo
-#o animal, que vai ser atribuido as suas caracteristicas
-    def __init__(self, species:str, sound: str ): 
-        self.species =str=species
-        self.sound = str= sound
-        self.age: int=0
+class Animal:
+    def __init__(self,species:str, sound : str):
+        self.species : str = species
+        self.sound: str = sound
+        self.age : int = 0
+        self.maxAge : int = 4
 
-    def __str__(self) -> str: # o toString é para transformar a classe/objeto
-        #em texto, realizando toda a conversão
-        return f"{self.species}:{self.age}:{self.sound}"
-
-    def ageBy(self, increment:int)->None: # o def sempre inicializa uma variavel
-       # se for maior que 4, ela não aumentara na linha abaixo, ela cogela
+    def __str__(self)->str:
+            return f"{self.species}:{self.age}:{self.sound}"
+        
+    def ageBy (self, increment : int):
         self.age += increment
-        if self.age > 4:
-            self.age = 4
+        if self.age >= self.maxAge :
+           print (f"warning: {self.species} morreu")
+           self.age = self.maxAge
 
+    def makeSound (self):
+        if self.age == 0:
+            return "---"
+        if self.age == 4:
+            return "RIP"  
+        return self.sound
+    
 
-    def makeSound(self)->str:
-        if self.age ==0:
-            return  "---"
-        elif self.age==4:
-            return "RIP"
-        else:
-            return self.sound
-       
-
-
-
+        
 
 
 def main():
@@ -46,8 +42,6 @@ def main():
         elif args [0]== "grow":
             increment: int = int (args[1])
             animal.ageBy (increment)
-            if  animal.age == 4:
-                 print (f"warning: {animal.species} morreu") 
         elif args[0] == "noise":
             print(animal.makeSound())
     
